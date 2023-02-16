@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans&family=Grape+Nuts&family=Work+Sans&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(https://travel-quaint.com/userfiles/383/15166_5.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+  }
+  header {
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  main {
+    /* Чтобы занимал оставшееся пространство */
+    flex-grow: 1;
+  }
+  
+  footer {
+    /* Чтобы footer не уменьшался */
+    flex-shrink: 0;
+  }
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 41px 20px 41px;
+}
+.contacts{
+    display: flex;
+    gap: 20px;
+}
+.telephone,
+.mail{
+    display: flex;
+    color: white;
+    gap: 6px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.nav__menu{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 24px;
+}
+.social-media{
+    display: flex;
+    gap: 17px;
+}
+
+.text_block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  text-align: center;
+  margin-top: 15vh;
+}
+.text_block .title{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 64px;
+  line-height: 65px;
+}
+.text_block .subtitle{
+  font-family: 'Grape Nuts';
+  font-style: bold;
+  font-size: 40px;
+  line-height: 39px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choose{
+  display: flex;
+  justify-content: center;
+}
+.choose__menu{
+  font-family: 'Work Sans';
+  background-color: #0099A3;
+  gap: 19px;
+  font-size: 20px;
+  max-width: 270px;
+  margin-top: 20vh;
+  display: flex;
+  padding: 15px 150px;
+  color: white;
+  justify-content: center;
+}
+.choose__menu .flights:hover{
+  border-bottom: 1px solid white;
+}
+.choose__menu .hotels:hover{
+  border-bottom: 1px solid white;
+}
+.choose__menu .tours:hover{
+  border-bottom: 1px solid white;
+}
+.booking{
+  display: flex;
+  color:#4B4B4B;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.booking__menu,
+.menu__from,
+.menu__to,
+.menu__dep-date,
+.menu__return-date{
+  display: flex;
+}
+.menu__from,
+.menu__to{
+  gap: 5px;
+}
+.menu__dep-date,
+.menu__return-date{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.booking__menu{
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+input{
+  color: #4B4B4B;
+  font-size: 16px;
+  font-family: 'Alegreya Sans';
+  border: none;
+  background: none;
+}
