@@ -219,3 +219,15 @@ input{
   display: flex;
   justify-content: space-between;
 }
+.video-section{
+  background-image: url(https://philippinesvip.com/assets/themes/main-60026/images/main/philippinesvip.com/base-1/1920x950.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
