@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans&family=Grape+Nuts&family=Work+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@400;700&family=Grape+Nuts&family=Work+Sans:wght@200;300;400&display=swap');
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -62,7 +62,6 @@ nav{
     display: flex;
     gap: 17px;
 }
-
 .text_block{
   display: flex;
   flex-direction: column;
@@ -83,7 +82,7 @@ nav{
   font-size: 64px;
   line-height: 39px;
 }
-.wrapper{
+.main .wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,6 +149,7 @@ input{
   font-family: 'Alegreya Sans';
   border: none;
   background: none;
+  text-align: center;
 }
 .main .wrapper, .header{
     background-image: url(https://travel-quaint.com/userfiles/383/15166_5.webp);
@@ -173,7 +173,6 @@ input{
   background-blend-mode: screen;
   background-color: #bbb;
 }
-
 .popular-destinations .title{
   font-family: 'Grape Nuts';
   font-style: normal;
@@ -216,7 +215,6 @@ input{
   font-size: 20px;
   align-self: flex-end;
 }
-
 .video-section{
   background-image: url(https://philippinesvip.com/assets/themes/main-60026/images/main/philippinesvip.com/base-1/1920x950.jpg);
   background-position: center center;
@@ -294,7 +292,7 @@ input{
   align-items: center;
   justify-content: center;
 }
-.adventure .title, .card__title{
+.adventure .title, .adventure .card__title{
   font-family: 'Grape Nuts';
 }
 .adventure .title{
@@ -313,7 +311,6 @@ input{
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
   margin-top: 3vw;
-
 }
 .card__image > img:not(.big){
   position: relative;
@@ -330,12 +327,9 @@ input{
   margin-left: 35vh;
   
 }
-
-
 .adventure .card{
   display: flex;
   align-items: flex-end;
-  
 }
 .adventure .card__text{
   margin-bottom: 4px;
@@ -347,7 +341,156 @@ input{
   background: rgba(255, 255, 255, 0.9);
   font-size: 14px;
 }
-
 .adventure .card:first-child{
   grid-row-start: span 2;
+}
+.newsletter-and-awards{
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipPKYTY7WwIfgP2liikDxPwAzewrxuw9Fxrxv_vE=s1600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  min-width: 100vw;
+  min-height: 100vh;
+  background-blend-mode: screen;
+  background-color: #bbb;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 0 25vh;
+}
+.newsletter-and-awards .newsletter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 550px;
+  max-width: 590px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 9vh 10px;
+}
+.newsletter .title{
+  font-family: "Abril Fatface";
+  font-size: 28px;
+  color: #282828;
+}
+.newsletter .subtitle{
+  font-family: "Work Sans";
+  max-width: 500px;
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 2vh;
+}
+#email{
+  margin-top: 2vh;
+  background: rgba(255, 255, 255, 0.6);
+  width: 400px;
+  min-height: 48px;
+}
+#tel{
+  margin-top: 3vh;
+  background: rgba(255, 255, 255, 0.6);
+  width: 400px;
+  min-height: 48px;
+}
+.newsletter .subscribe{
+  margin-top: 12vh;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+.award .awards .cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 2vh;
+  justify-content: space-between;
+}
+.award .awards .cards img{
+  max-width: 200px;
+  max-height: 200px;
+}
+.award .awards .card{
+  font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.award .awards .card .card__title{
+  font-weight: 700;
+}
+.award{
+  display: flex;
+  flex-direction: column;
+}
+.award .title{
+  font-family: 'Grape Nuts';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+}
+.award .subtitle{
+  font-family: 'Work Sans';
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin-top: 1vh;
+  max-width: 400px;
+}
+.looking-for-exp{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+.looking-for-exp .container{
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipPKYTY7WwIfgP2liikDxPwAzewrxuw9Fxrxv_vE=s1600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+
+}
+.looking-for-exp .title{
+  font-family: Grape Nuts;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.looking-for-exp .subtitle{
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin-top: 2vh;
+  max-width: 410px;
+  font-weight: 300;
+
+  text-align: left;
+}
+
+.looking-for-exp button{
+  background: #0099A3;
+  border: 1px solid #FFFFFF;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 1vh;
+  margin-left: 35vh;
 }
