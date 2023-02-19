@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@400;700&family=Grape+Nuts&family=Work+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@400;700&family=Allison&family=Grape+Nuts&family=Work+Sans:wght@200;300;400&display=swap');
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -29,8 +29,22 @@ main {
 }
   
 footer {
-    /* Чтобы footer не уменьшался */
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipPKYTY7WwIfgP2liikDxPwAzewrxuw9Fxrxv_vE=s1600);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
   flex-shrink: 0;
+}
+footer a{
+  color: black;
 }
 .upper-header{
     display: flex;
@@ -47,12 +61,12 @@ footer {
     color: white;
     gap: 6px;
 }
-nav{
+.nav{
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-.nav__menu{
+.nav .nav__menu{
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -493,4 +507,26 @@ input{
   padding: 10px 20px;
   margin-top: 1vh;
   margin-left: 35vh;
+}
+.star-travels{
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+.star-travels .title{
+  font-family: 'Allison', cursive;
+  font-size: 128px;
+}
+.footer__nav .nav__menu{
+  font-family: Work Sans;
+  display: flex;
+  justify-content: space-around;
+  gap: 72px;
+}
+footer .copyright{
+  padding-top: 54px;
+  padding-bottom: 10px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 200;
 }
